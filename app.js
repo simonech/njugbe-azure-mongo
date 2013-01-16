@@ -6,8 +6,7 @@ var express = require('express')
 var TaskList = require('./routes/tasklist');
 
 
-//var taskList = new TaskList(process.env.CUSTOMCONNSTR_MONGOLAB_URI);
-var taskList = new TaskList("mongodb://njugbe:password@ds045077.mongolab.com:45077/njugbe");
+var taskList = new TaskList(process.env.CUSTOMCONNSTR_MONGOLAB_URI);
 
 
 var app = express();
